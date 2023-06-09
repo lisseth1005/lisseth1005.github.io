@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+body {
+  background-color: rgb(248, 188, 247);
+  color: #000000da;
+}
+
+/* Estilos para el contenedor de resultados */
+#resultado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+img{
+  padding-top: 5px;
+}
+/* Estilos para la tarjeta de producto */
+.card {
+  background-color: #f9f9f9;
+  box-shadow: 0px 1px 3px rgba(196, 14, 14, 0.2);
+  border-radius: 50px;
+  padding: 20px;
+  width: 280px; /* Ajusta el ancho deseado */
+  height: 580px; /* Ajusta la altura deseada */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para la imagen del producto */
+.card-image {
+  width: 220px;
+  height: 220px; /* Ajusta la altura deseada */
+  object-fit: cover;
+  border-radius: 150px;
+}
+
+/* Resto de estilos para el título, descripción, precio y botón se mantienen igual */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333333;
+}
+
+.card-description {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #666666;
+}
+
+.card-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333333;
+}
+
+.card-button {
+  background-color:blueviolet;
+  color: #333333;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #ffae00;
+}
+
+/* Estilo de la lista desplegable */
+select.form-control {
+  width: 200px;
+  padding: 17px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+select.form-control option {
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+nav {
+  margin: auto;
+  width: 1000px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px rgba(196, 14, 14, 0.2);
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+
+.menu-items {
+  
+  margin-right: 20px;
+}
+
+.menu-items a,
+.menu-items button {
+  background-color:blueviolet;
+  margin-left: 10px;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+#clientName {
+  display: none;
+}
+
+nav button {
+  font-family: 'Noto Sans JP', sans-serif;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #262626;
+  padding: 5px 18px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #c0c0c0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #333333;
+  padding: 20px;
+  width: 400px;
+  margin: 150px auto;
+}
+
+.modal h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #333333;
+}
+
+.modal button {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  color: #333333;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px #333333;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #666666;
+}
+
+.btn-primary {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  color: #333333;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px #333333;
+  cursor: pointer;
+}
+
+a {
+  color: #dc5b5b;
+  text-decoration: none;
+}
+
+.container {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #333333;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #333333;
+}
+
+input,
+button {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #fff8f8;
+  color: #333333;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px #ffffff;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #7f8fa6;
+}
+
+#signup:hover {
+  background-color: #666666;
+}
+
+
+#btnfil{
+  background-color: blueviolet;
+}
+
+
+.emailuser{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#emailu{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.filtro{
+  display: flex;
+  justify-content: center;
+}
+
+#categoria{
+  margin-right: 10px;
+}
